@@ -12,7 +12,7 @@ scheduling, réseau, stockage, sécurité, observabilité — avec une logique d
 
 | Jalon | Thème | Labs | Statut |
 |-------|-------|------|--------|
-| 1 | Fondamentaux : Pods, ReplicaSets, Deployments, Namespaces | 01 | 🔄 En cours |
+| 1 | Fondamentaux : Pods, ReplicaSets, Deployments, Namespaces | 01-02 | 🔄 En cours |
 | 2 | Services & réseau : ClusterIP, NodePort, Ingress, DNS | — | ⏳ À venir |
 | 3 | Configuration : ConfigMaps, Secrets, variables d'env | — | ⏳ À venir |
 | 4 | Scheduling : labels, selectors, taints/tolerations, affinity | — | ⏳ À venir |
