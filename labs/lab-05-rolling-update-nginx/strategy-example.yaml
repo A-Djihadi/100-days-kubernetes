@@ -1,0 +1,23 @@
+# Exemple : stratégie de rolling update explicite (extrait de Deployment)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1          # au plus 1 pod en plus pendant la bascule (4 au total)
+      maxUnavailable: 0    # jamais moins de 3 pods prêts → zéro coupure
+  selector:
+    matchLabels:
+      app: nginx-app
+  template:
+    metadata:
+      labels:
+        app: nginx-app
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:1.17
